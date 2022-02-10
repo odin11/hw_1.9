@@ -8,9 +8,9 @@ public class Main {
 
         Author authorEng = new Author("Joan","Rowling");
         Author authorRus = new Author("Leo","Tolstoy");
-        Book bookEng = new Book("harry_potter",2001,"Joan Rowling");
-        Book bookRus = new Book("war and peace",1861,"Leo Tolstoy");
 
+        Book bookEng = new Book("harry",2002,authorEng);
+        Book bookRus = new Book("wap",1861,authorRus);
         System.out.println("bookEng: " + bookEng.getName() + "/"+ bookEng.getPublishYear()+"/"+ authorEng.getAuthorName()+" "+authorEng.getAuthorSecondaryName());
 
         //task7
