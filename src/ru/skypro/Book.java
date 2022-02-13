@@ -11,7 +11,7 @@ public class Book {
     private int publishYear;
 
     //task3
-    public Book(String name, int publishYear, Author author) {
+    public Book(String name, int publishYear, String author) {
         this.name = name;
         this.author = new Author();
         //this.author = author.toString();

@@ -17,5 +17,19 @@ public class Main {
         bookRus.setPublishYear(1866);
         System.out.println("bookRus.getPublishYear() = " + bookRus.getPublishYear());
 
+        //task1.10
+        System.out.println(bookEng);
+        System.out.println(bookRus);
+        System.out.println(bookEng.equals(bookRus));
+        System.out.println(bookEng.equals(bookEng));
+        System.out.println(authorEng.equals(authorRus));
+        System.out.println(authorEng.equals(authorEng));
+        System.out.println(bookRus.hashCode());
+        System.out.println(bookEng.hashCode());
+        System.out.println(authorEng.hashCode());
+        System.out.println(authorRus.hashCode());
+
+
     }
+
 }
