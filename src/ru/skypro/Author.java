@@ -16,6 +16,9 @@ public class Author {
    public Author() {
     }
 
+    //public Author() {
+    //}
+
     //task4
     public String getAuthorName() {
         return this.authorName;
