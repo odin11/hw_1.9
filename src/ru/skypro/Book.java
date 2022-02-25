@@ -6,18 +6,15 @@ import java.util.Objects;
 public class Book {
 
     private String name;
-    //private String author;
     private Author author;
     private int publishYear;
 
     //task3
-    public Book(String name, int publishYear, String author) {
+    public Book(String name, int publishYear, Author author) {
         this.name = name;
-        this.author = new Author();
-        //this.author = author.toString();
+        this.author = author;
         this.publishYear = publishYear;
     }
-
 
     //task4
     public String getName() {
@@ -33,19 +30,13 @@ public class Book {
         this.publishYear = publishYear;
     }
 
-    //task1.10
-    /*public String toString() {
-        return "Name: " + this.name + " PublishYear: " + this.publishYear + " Author: " + this.author;
-    }*/
-
+//task1.10
     @Override
     public String toString() {
-        return "Book{" +
+        return "Book: " +
                 "name='" + name + '\'' +
-                //", author=" + author.toString() +
-                ", author=" + author.toString() +
-                ", publishYear=" + publishYear +
-                '}';
+                ", author=" + author +
+                ", publishYear=" + publishYear;
     }
 
     @Override

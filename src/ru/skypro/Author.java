@@ -16,9 +16,6 @@ public class Author {
    public Author() {
     }
 
-    //public Author() {
-    //}
-
     //task4
     public String getAuthorName() {
         return this.authorName;
@@ -31,13 +28,11 @@ public class Author {
     }
 
     //task1.10
-   @Override
+    @Override
     public String toString() {
-        return "Author{" +
-                "authorName='" + authorName + '\'' +
-                ", authorSecondaryName='" + authorSecondaryName + '\'' +
-                '}';
+        return authorName + " " + authorSecondaryName ;
     }
+
 
     @Override
     public boolean equals(Object o) {
